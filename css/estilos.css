@@ -203,8 +203,8 @@ footer hr {
     }
 
     /* Ajustar altura del hero en móvil */
-    .carousel item {
-        height: calc(50dvh - 76px) !important;
+    .carousel-item {
+        height: calc(80dvh - 76px) !important;
     }
 }
 
