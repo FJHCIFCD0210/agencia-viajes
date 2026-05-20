@@ -202,10 +202,10 @@ footer hr {
         border-radius: 8px;
     }
 
-    /* Ajustar altura del hero en móvil */
+    /* Ajustar altura del hero en móvil 
     .carousel item {
         height: calc(80vh - 76px)  !important
-    }
+    } */
 }
 
 /* === Scrollbar Personalizado (Chrome) === */
