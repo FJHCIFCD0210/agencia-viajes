@@ -88,7 +88,7 @@ body {
 /* === CARRUSEL === */
 
 #carruselHero .carousel-item {
-    min-height: calc(100dvh - 76px);
+    height: calc(100dvh - 76px);
 }
 
 .carousel-indicators button {
