@@ -1,0 +1,228 @@
+/* =====================================
+    ESTILOS PERSONALIZADOS - LUXE TRAVEL
+    ==================================== */
+
+/* === Variables de color === */
+:root {
+    --color-fondo-1: #1a1a1a;
+    --color-fondo-2: #1f1f1f;
+    --color-fondo-3: #0f0f0f;
+    --color-dorado: #d4a956;
+    --color-dorado-hover: #e6c373;
+}
+
+/* === Reset y base === */
+body {
+    background-color: var(--color-fondo-1);
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* === Clase utilitaria === */
+.letter-spacing {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* === Personalización de Bootstrap warning === */
+.text-warning {
+    color: var(--color-dorado) !important;
+}
+
+.bg-warning {
+    background-color: var(--color-dorado) !important;
+}
+
+.btn-warning {
+    background-color: var(--color-dorado) !important;
+    border-color: var(--color-dorado) !important;
+    color: #1a1a1a !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+};
+
+.btn-warning:hover {
+    background-color: var(--color-dorado-hover) !important;
+    border-color: var(--color-dorado-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 169, 86, 0.4);
+}
+
+.btn-outline-warning {
+    color: var(--color-dorado) !important;
+    border-color: var(--color-dorado) !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--color-dorado) !important;
+    color: #1a1a1a !important;
+}
+
+/* === NAVBAR === */
+.navbar {
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    color: var(--color-dorado) !important;
+    letter-spacing: 2px;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: var(--color-dorado) !important;
+}
+
+/* === CARRUSEL === */
+
+#carruselHero .carousel-item {
+    height: calc(100dvh - 76px);
+}
+
+.carousel-indicators button {
+    background-color: var(--color-dorado) !important;
+    width: 30px !important;
+    height: 3px !important;
+    border: none !important;
+}
+
+.display-3 {
+    font-weight: 700 !important;
+}
+
+/* === SECCIONES GENERALES === */
+
+section {
+    scroll-margin-top: 80px; /* Para que el ancla no quede debajo de la navbar. */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* === DESTINOS - Efecto hover === */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#destinos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(212, 169, 86, 0.2);
+}
+
+/* === OFERTAS === */
+
+.oferta.card {
+    border-left: 4px solid var(--color-dorado) !important;
+    transition: transform 0.3s ease;
+}
+
+.oferta.card:hover {
+    transform: scale(1.02);
+}
+
+/* === ACORDEON FAQ === */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-fondo-2) !important;
+    color: var(--color-dorado) !important;
+    border-left: 4px solid var(--color-dorado) !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: var(--color-dorado) !important;
+}
+
+.accordion.button:after {
+    filter: invert(70%) sepia(40%) saturate(500%) hue-rotate(10deg);
+}
+
+/* === FORMULARIO === */
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+    border-color: var(--color-dorado) !important;
+    box-shadow: 0 0 0 0.2rem rgba(212, 169, 86, 0.25) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-dorado) !important;
+    border-color: var(--color-dorado) !important;
+}
+
+/* === FOOTER === */
+
+footer a:hover {
+    color: var(--color-dorado) !important;
+    transition: color 0.3s ease;
+}
+
+footer hr {
+    opacity: 0.2;
+}
+
+/* === RESPONSIVE: Ajustes para dispositivos móviles === */
+@media (max-width: 768px) {
+
+    .display-3 {
+        font-size: 2rem !important;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    /* En móvil, el menú colapsado tiene fondo oscuro */
+    .navbar-collapse {
+        background-color: #0f0f0f;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    /* Ajustar altura del hero en móvil */
+    .carousel item {
+        height: 80vh !important
+    }
+}
+
+/* === Scrollbar Personalizado (Chrome) === */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dorado);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-dorado-hover);
+}
