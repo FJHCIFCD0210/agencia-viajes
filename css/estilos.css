@@ -88,7 +88,7 @@ body {
 /* === CARRUSEL === */
 
 #carruselHero .carousel-item {
-    height: calc(100dvh - 76px);
+    min-height: calc(100dvh - 76px);
 }
 
 .carousel-indicators button {
@@ -200,11 +200,6 @@ footer hr {
         padding: 15px;
         margin-top: 10px;
         border-radius: 8px;
-    }
-
-    /* Ajustar altura del hero en móvil */
-    .carousel-item {
-        height: 20dvh !important;
     }
 }
 
